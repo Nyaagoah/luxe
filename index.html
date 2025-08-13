@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coastal Luxe Gifts & Picnics</title>
+  <style>
+    :root{--bg:#fffaf5;--text:#1f2937;--muted:#6b7280;--accent:#0ea5a6;--accent-2:#f59e0b;--soft:#fbf7f2;--shadow:0 12px 30px rgba(17,24,39,.08);--radius:20px}
+    *{box-sizing:border-box}body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;color:var(--text);background:var(--bg)}
+    a{color:inherit}
+    .container{max-width:1100px;margin:auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(255,250,245,.85);backdrop-filter:blur(10px);border-bottom:1px solid #efe7dd;z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .btn{display:inline-block;padding:10px 16px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;box-shadow:var(--shadow)}
+    .btn.outline{background:transparent;border:1px solid rgba(14,165,166,.25);color:var(--accent)}
+    .hero{position:relative;height:70vh;min-height:480px;display:grid;place-items:center;overflow:hidden}
+    .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.75)}
+    .hero .inner{position:relative;text-align:center;color:#fff}
+    h1{font-size:clamp(32px,5vw,56px);margin:0}
+    h2{font-size:clamp(26px,3.2vw,36px);margin:0 0 14px}
+    .badges{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:30px 0}
+    .badge{border:1px solid #efe7dd;border-radius:var(--radius);padding:14px;text-align:center;box-shadow:var(--shadow);background:#fff;font-size:14px}
+    .section{padding:56px 0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:#fff;border:1px solid #efe7dd;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;transition:transform .2s ease, box-shadow .2s ease}
+    .card .pad{padding:20px}
+    .price{font-size:28px;margin-top:6px}
+    ul.feats{padding-left:18px;margin:12px 0;list-style:disc}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .gallery img{width:100%;height:260px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow)}
+    .soft{background:var(--soft)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:800px){.grid2{grid-template-columns:1fr}.badges{grid-template-columns:1fr 1fr}}
+    label{font-size:12px;color:var(--muted);display:block;margin-bottom:6px}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:12px}
+    footer{border-top:1px solid #efe7dd;padding:26px 0;text-align:center;color:#8b8b8b}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <strong>Coastal Luxe</strong>
+        <div style="display:flex;gap:14px;align-items:center">
+          <a href="#packages">Packages</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#customize">Customize</a>
+          <a href="#book" class="btn">Book</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="coastal_1.webp" alt="Coastal Luxe picnic"/>
+    <div class="inner container">
+      <h1 style="text-shadow:0 6px 22px rgba(0,0,0,.35)">Luxury Gifts & Aesthetic Picnics</h1>
+      <p style="opacity:.97;font-size:18px;margin:12px 0 18px">Manhattan Beach + nearby. We style, deliver, and create Instagram‑worthy moments.</p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <a class="btn" href="#packages">View Packages</a>
+        <a class="btn outline" href="#book">Get a Quote</a>
+      </div>
+    </div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,165,166,.25),transparent 40%,rgba(0,0,0,.25))"></div>
+  </section>
+
+  <div class="container badges">
+    <div class="badge">Same‑day MB delivery</div>
+    <div class="badge">Custom colors & themes</div>
+    <div class="badge">Setup • Style • Cleanup</div>
+    <div class="badge">Perfect for proposals & birthdays</div>
+  </div>
+
+  <section id="packages" class="section soft">
+    <div class="container">
+      <h2>Packages</h2>
+      <div class="cards">
+        <div class="card"><div class="pad">
+          <div style="font-size:12px;color:#777;text-transform:uppercase">Gift Box</div>
+          <h3>Blush & Bubbles</h3>
+          <div class="price">$95</div>
+          <ul class="feats">
+            <li>Stella/Prosecco</li>
+            <li>Silk roses + Ferrero Rocher</li>
+            <li>Luxe box + ribbon</li>
+          </ul>
+          <a class="btn" href="#book">Book</a>
+        </div></div>
+        <div class="card"><div class="pad">
+          <div style="font-size:12px;color:#777;text-transform:uppercase">Gift Bouquet</div>
+          <h3>Rosé Romance</h3>
+          <div class="price">$125</div>
+          <ul class="feats">
+            <li>Rosé bottle floral arrangement</li>
+            <li>Seasonal greenery</li>
+            <li>Hand delivery (MB & nearby)</li>
+          </ul>
+          <a class="btn" href="#book">Book</a>
+        </div></div>
+        <div class="card"><div class="pad">
+          <div style="font-size:12px;color:#777;text-transform:uppercase">Picnic</div>
+          <h3>Coastal Luxe</h3>
+          <div class="price">$380</div>
+          <ul class="feats">
+            <li>Low table + settings</li>
+            <li>Florals + umbrella</li>
+            <li>Grazing board</li>
+          </ul>
+          <a class="btn" href="#book">Book</a>
+        </div></div>
+        <div class="card"><div class="pad">
+          <div style="font-size:12px;color:#777;text-transform:uppercase">Combo</div>
+          <h3>Gift & Gather</h3>
+          <div class="price">$420+</div>
+          <ul class="feats">
+            <li>Any picnic + gift box</li>
+            <li>Setup & cleanup</li>
+            <li>Up to 2 hours</li>
+          </ul>
+          <a class="btn" href="#book">Book</a>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="coastal_1.webp" alt="Picnic setup"/>
+        <img src="coastal_2.webp" alt="Gift box with florals"/>
+        <img src="coastal_3.webp" alt="Bottle bouquet"/>
+        <img src="coastal_4.webp" alt="Luxury gift details"/>
+        <img src="coastal_5.webp" alt="Romantic picnic"/>
+        <img src="coastal_6.webp" alt="Dessert + bubbles"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="customize" class="section soft">
+    <div class="container">
+      <h2>Build Your Gift</h2>
+      <p style="color:var(--muted)">Choose wine, dessert, florals and budget. We'll confirm availability and pricing.</p>
+      <form class="grid2" onsubmit="event.preventDefault();alert('Thanks! We\'ll confirm your custom gift shortly.');">
+        <div>
+          <label>Wine / Bubbles</label>
+          <select>
+            <option>Rosé</option>
+            <option>Prosecco</option>
+            <option>Champagne (Moët / Veuve)</option>
+            <option>Red (Cab / Pinot)</option>
+            <option>White (Sauv Blanc / Pinot Grigio)</option>
+            <option>Non‑alcoholic Sparkling</option>
+          </select>
+        </div>
+        <div>
+          <label>Dessert</label>
+          <select>
+            <option>Macarons</option>
+            <option>Chocolate Truffles</option>
+            <option>Mini Cupcakes</option>
+            <option>Cheesecake Bites</option>
+            <option>Fruit Box</option>
+            <option>No dessert</option>
+          </select>
+        </div>
+        <div>
+          <label>Florals</label>
+          <select>
+            <option>Blush & white palette</option>
+            <option>Red roses + eucalyptus</option>
+            <option>Neutral coastal greens</option>
+            <option>No flowers</option>
+          </select>
+        </div>
+        <div>
+          <label>Budget</label>
+          <select>
+            <option>$85–$125</option>
+            <option>$150–$250</option>
+            <option>$300–$450</option>
+            <option>$500+ (custom)</option>
+          </select>
+        </div>
+        <div>
+          <label>Gift Message (printed card)</label>
+          <input placeholder="Your message" />
+        </div>
+        <div>
+          <label>Dietary / Allergies</label>
+          <input placeholder="e.g., nut‑free, gluten‑free" />
+        </div>
+        <div>
+          <label>Delivery / Pickup Date</label>
+          <input placeholder="MM/DD, time window" />
+        </div>
+        <div>
+          <label>Delivery Address (or Picnic Location)</label>
+          <input placeholder="Address / beach / park" />
+        </div>
+        <div style="grid-column:1/-1;text-align:right"><button class="btn">Send Custom Request</button></div>
+      </form>
+      <p style="font-size:12px;color:#777;margin-top:8px">Note: Alcohol gifts follow local laws. Consumption at public beaches must comply with city rules.</p>
+    </div>
+  </section>
+
+  <section id="book" class="section">
+    <div class="container">
+      <h2>Book Your Date</h2>
+      <p style="color:var(--muted)">Send your preferred date, time, location, and package. We'll confirm within hours.</p>
+      <form class="grid2" onsubmit="event.preventDefault();alert('Thanks! We\'ll be in touch ASAP.');">
+        <div><label>Name</label><input required /></div>
+        <div><label>Email</label><input type="email" required /></div>
+        <div><label>Phone</label><input /></div>
+        <div><label>Preferred date & time</label><input /></div>
+        <div style="grid-column:1/-1"><label>Which package / any notes?</label><textarea rows="5"></textarea></div>
+        <div style="grid-column:1/-1;text-align:right"><button class="btn">Send Inquiry</button></div>
+      </form>
+      <div style="margin-top:14px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <a href="https://instagram.com/" target="_blank" class="btn outline">Instagram</a>
+        <a href="tel:+13105551234" class="btn outline">Call/Text</a>
+        <a href="mailto:hello@coastalluxe.co" class="btn outline">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Coastal Luxe Gifts & Picnics — All rights reserved.
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
